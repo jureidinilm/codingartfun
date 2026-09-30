@@ -1,20 +1,20 @@
-let posX = [50,20, 25, 100];
-let posY = [50,20,25,100];
-let d = [12,5,50,60];
+let posX = [50,90,20,50,600,520];
+let posY = [50,70,70,70,600,580];
+let d = [90,90,90,90,200,170];
 
 
 function setup() {
   // Create a canvas that fills the entire browser window
-  createCanvas(100, 100);
+  createCanvas(windowHeight, windowWidth);
   background('skyblue');
-  textSize(100);
-  text('🌈', 0, 100);
+  textSize(500);
+  text('🌈', 0, 500);
 
 }
 
 function draw() {
-
-  for(let i = 0; i < 3; i++){
+  noStroke();
+  for(let i = 0; i < 6; i++){
       circle(posX[i],posY[i],d[i]);
   }
 }
